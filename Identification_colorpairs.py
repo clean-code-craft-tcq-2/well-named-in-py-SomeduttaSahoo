@@ -1,7 +1,7 @@
 from Colorpair_Names import MAJOR_COLORS, MINOR_COLORS
 
 
-def get_color_from_pairnumber(pair_number):
+def get_color_from_pair_number(pair_number):
     zero_based_pair_number = pair_number - 1
     major_index = zero_based_pair_number // len(MINOR_COLORS)
     if major_index >= len(MAJOR_COLORS):
