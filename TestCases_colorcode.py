@@ -17,10 +17,10 @@ def test_pair_to_number(major_color, minor_color, expected_pair_number):
     assert (len(reference_manual) == expected_entries_number)
 
 
-if __name__ == '__main__':
+def tests():
   test_number_to_pair(4, 'White', 'Brown')
   test_number_to_pair(5, 'White', 'Slate')
   test_pair_to_number('Black', 'Orange', 12)
   test_pair_to_number('Violet', 'Slate', 25)
   test_pair_to_number('Red', 'Orange', 7)
-  print_color_code_manual()
+  color_code_manual(25)
