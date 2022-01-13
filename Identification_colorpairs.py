@@ -12,7 +12,7 @@ def get_color_from_pair_number(pair_number):
     return MAJOR_COLORS[major_index], MINOR_COLORS[minor_index]
 
 
-def get_pairnumber_from_color(major_color, minor_color):
+def get_pair_number_from_color(major_color, minor_color):
     try:
         major_index = MAJOR_COLORS.index(major_color)
     except ValueError:
