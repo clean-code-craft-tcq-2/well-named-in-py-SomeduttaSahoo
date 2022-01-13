@@ -1,4 +1,4 @@
-import Identification_colorpairs as color
+import Identification_colorpairs
 from ColorPair_ReferenceManual import color_code_manual
 
 def test_number_to_pair(pair_number,
