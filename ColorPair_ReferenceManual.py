@@ -1,5 +1,5 @@
 from Identification_colorpairs import*
-from Colorpair_Names import colorpair_names
+from Color_Names import colorpair_names
 
 def color_code_manual():
     reference_manual = []
