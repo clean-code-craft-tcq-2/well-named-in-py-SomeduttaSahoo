@@ -1,4 +1,4 @@
-import Identification_colorpairs as color
+from Identification_colorpairs import*
 from Colorpair_Names import colorpair_names
 
 def color_code_manual():
@@ -6,7 +6,7 @@ def color_code_manual():
     pair_number_start_index = 1
     pair_number_end_index = len(color.MAJOR_COLORS) * len(color.MINOR_COLORS) + 1
     for pair_number in range(pair_number_start_index, pair_number_end_index):
-        major_color, minor_color = color.get_color_from_pairnumber(pair_number)
+        major_color, minor_color = get_color_from_pairnumber(pair_number)
         formatted_colorpair = colorpair_names(major_color, minor_color)
         reference_manual.append("{:<15} {:<10} ".format(pair_number, formatted_colorpair))
     return reference_manual
