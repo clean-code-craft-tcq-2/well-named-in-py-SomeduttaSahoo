@@ -6,4 +6,3 @@ if __name__ == '__main__':
     print("\n Reference Manual for Telecomm Insulation Wire color codes \n", )
     reference_manual = create_reference_manual()
     print_reference_manual(reference_manual)
-    print('Done :)')
