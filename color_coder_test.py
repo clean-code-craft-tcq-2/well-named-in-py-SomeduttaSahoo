@@ -1,16 +1,16 @@
-import colorpair_generator as color
+from colorpair_generator import*
 from reference_manual_generator import create_reference_manual
 
 
 def test_given_pairnumber_yeild_expected_colorpair(pair_number,
                                                    expected_major_color, expected_minor_color):
-    major_color, minor_color = color.get_color_from_pairnumber(pair_number)
+    major_color, minor_color = get_color_from_pairnumber(pair_number)
     assert (major_color == expected_major_color)
     assert (minor_color == expected_minor_color)
 
 
 def test_given_colorpair_yeild_expected_pairnumber(major_color, minor_color, expected_pair_number):
-    pair_number = color.get_pairnumber_from_color(major_color, minor_color)
+    pair_number = get_pairnumber_from_color(major_color, minor_color)
     assert (pair_number == expected_pair_number)
 
 
