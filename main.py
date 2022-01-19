@@ -7,8 +7,3 @@ if __name__ == '__main__':
     reference_manual = create_reference_manual()
     print_reference_manual(reference_manual)
     print('Done :)')
-    
-
-
-
-
