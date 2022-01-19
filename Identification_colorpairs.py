@@ -1,5 +1,5 @@
-from Colorpair_Names import MAJOR_COLORS, MINOR_COLORS
-
+MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
+MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
 
 def get_color_from_pair_number(pair_number):
     zero_based_pair_number = pair_number - 1
@@ -10,7 +10,6 @@ def get_color_from_pair_number(pair_number):
     if minor_index >= len(MINOR_COLORS):
         raise Exception('Minor Color index out of range')
     return MAJOR_COLORS[major_index], MINOR_COLORS[minor_index]
-
 
 def get_pair_number_from_color(major_color, minor_color):
     try:
